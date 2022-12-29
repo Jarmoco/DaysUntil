@@ -23,7 +23,7 @@
             <div class="section" id="homeSection">
                 <h1>Keep the Hype.</h1>
                 <h3>Create and share beautiful countdowns, no login required!</h3>
-                <button>Get Started</button>
+                <button id="scrollToCreateButton">Get Started</button>
             </div>
         </div>
 
@@ -31,18 +31,21 @@
             <div class="section glass" id="createSection">
                 <div id="nameAndAuthor">
                     <div class="glass" id="countdownName">
-                        Sons of The Forest
+                        <input type="text" class="countdownTextInput" id="nameInput" placeholder="countdown name">
                     </div>
                     <div class="glass" id="countdownAuthor">
-                        by Jarmoco
+                        <label for="authorInput">by</label>
+                        <input type="text" class="countdownTextInput" id="authorInput" placeholder="author">
                     </div>
                 </div>
                 <div id="datesSelector">
                     <div class="glass" id="fromDate">
-                        From: 29/12/2022
+                        <label for="fromDateInput">From:</label>
+                        <input type="date" class="dateInput" id="fromDateInput">
                     </div>
                     <div class="glass" id="toDate">
-                        To: 31/12/2022
+                        <label for="toDateInput">To:</label>
+                        <input type="date" class="dateInput" id="toDateInput">
                     </div>
                 </div>
                 <div id="countdownClock">
@@ -64,9 +67,17 @@
                     <button>Create</button>
                 </div>
             </div>
+            <div id="blocker" class="glass">
+                Coming soon
+            </div>
         </div>
-
     </div>
+
+    <footer>
+        <h3>2022 DaysUntil</h3>
+        <h4>by armadio</h4>
+    </footer>
+
     <script src="js/index.js"></script>
 </body>
 

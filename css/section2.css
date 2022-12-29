@@ -1,9 +1,14 @@
 #createSectionBack {
+    position: relative;
+    width: 95%;
+    margin-left: calc((100vw - 95% - 1%) / 2);
     border-radius: 15px;
     background-color: #0e100f;
     background-image:
-        radial-gradient(at 10% 20%, hsl(203.20, 54%, 27%) 0, transparent 59%),
-        radial-gradient(at 75% 50%, hsl(190.59, 54%, 51%) 0, transparent 40%);
+        radial-gradient(at 10% 20%, var(--color1) 0, transparent 30%),
+        radial-gradient(at 95% 90%, var(--color1dark) 0, transparent 20%),
+        radial-gradient(at 95% 10%, var(--color1darkest) 0, transparent 20%),
+        radial-gradient(at 10% 80%, var(--color1darkest) 0, transparent 40%);
 }
 
 #createSection {
@@ -12,7 +17,7 @@
 }
 
 #nameAndAuthor {
-    width: 100%;
+    width: 98%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -34,15 +39,12 @@
 
 #countdownName,
 #countdownAuthor {
+    display: flex;
+    align-items: center;
     padding-left: 2%;
-    font-size: 3vh;
-}
-
-#countdownName,
-#countdownAuthor {
+    font-size: 1.5vw;
     border-radius: 8px;
 }
-
 
 #datesSelector {
     margin-top: 1%;
@@ -62,6 +64,9 @@
 #fromDate,
 #toDate {
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #countdownClock {
@@ -72,14 +77,14 @@
 }
 
 #countdownClock h1 {
-    font-size: 20vh;
+    font-size: 10vw;
     margin: 0;
     margin-top: 8%;
 }
 
 #countdownClock h3 {
     margin-top: 0;
-    font-size: 3vh;
+    font-size: 1.3vw;
     font-weight: 200;
     color: var(--gray);
 }
@@ -152,4 +157,44 @@
 #customCheckbox input[type=checkbox]:checked + #checkBoxDot {
     left: 18px;
     background: var(--darkest);
+}
+
+.countdownTextInput {
+    height: 7vh;
+    line-height: 7vh;
+    font-size: 2vw;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+    font-family: "Gelion regular";
+}
+
+#nameInput {
+    margin-left: -2%;
+    font-family: "Gelion medium";
+}
+
+#authorInput {
+    padding-left: 1%;
+    font-family: "Gelion medium";
+}
+
+.dateInput {
+    outline: none;
+    border: none;
+    font-family: "Gelion regular";
+    font-size: 1.3vw;
+    background-color: transparent;
+    color: var(--white);
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    width: 15px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
 }

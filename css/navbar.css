@@ -23,4 +23,5 @@ nav h3 {
 
 nav a {
     color: var(--gray);
+    cursor:not-allowed;
 }

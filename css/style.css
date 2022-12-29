@@ -4,12 +4,30 @@
 @import url("section1.css");
 @import url("section2.css");
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input::-webkit-datetime-edit-day-field:focus,
+input::-webkit-datetime-edit-month-field:focus,
+input::-webkit-datetime-edit-year-field:focus {
+    background-color: var(--color1);
+    color: var(--white);
+    outline: none;
+    border-radius: 3px;
+}
+
 body {
     font-family: "Gelion regular";
     background-color: var(--darkest);
     color: var(--white);
     user-select: none;
     -webkit-user-select: none;
+    border: 1%
 }
 
 .glass {
@@ -33,7 +51,7 @@ body {
 button {
     font-family: "Gelion regular";
     font-weight: 700;
-    font-size: 2.2vh;
+    font-size: 1.2vw;
     border: none;
     outline: none;
     cursor: pointer;
@@ -44,4 +62,34 @@ button {
 
 .particles-js-canvas-el {
     height: calc(100vh - 14vh);
+}
+
+footer {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+footer h3,
+h4 {
+    margin: 0;
+    font-weight: 400;
+}
+
+#blocker {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    border-radius: 8px;
+    display: flex;
+    width: 50vw;
+    font-size: 2vw;
+    height: 12vh;
+    border: 1px solid var(--color1darkest);
+    justify-content: center;
+    align-items: center;
 }
