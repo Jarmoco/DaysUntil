@@ -1,0 +1,26 @@
+#navBack {
+    border-radius: 8px;
+    background-color: #0e100f;
+    background-image: 
+        radial-gradient(at 10% 20%, hsl(203.20, 54%, 27%) 0, transparent 59%), 
+        radial-gradient(at 75% 50%, hsl(190.59, 54%, 51%) 0, transparent 40%);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh;
+    border-radius: 8px;
+    height: 6vh;
+}
+
+nav h3 {
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+nav a {
+    color: var(--gray);
+}

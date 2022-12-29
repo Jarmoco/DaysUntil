@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Until</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div id="navBack">
+        <nav class="glass">
+            <h3>Days Until</h3>
+            <a>My Countdowns</a>
+        </nav>
+    </div>
+
+    <div id="sectionsContainer">
+        <div id="homeSectionBack">
+            <div class="section" id="homeSection">
+                <h1>Keep the Hype.</h1>
+                <h3>Create and share beautiful countdowns, no login required!</h3>
+                <button>Get Started</button>
+            </div>
+        </div>
+
+        <div id="createSectionBack">
+            <div class="section glass" id="createSection">
+                <div id="nameAndAuthor">
+                    <div class="glass" id="countdownName">
+                        Sons of The Forest
+                    </div>
+                    <div class="glass" id="countdownAuthor">
+                        by Jarmoco
+                    </div>
+                </div>
+                <div id="datesSelector">
+                    <div class="glass" id="fromDate">
+                        From: 29/12/2022
+                    </div>
+                    <div class="glass" id="toDate">
+                        To: 31/12/2022
+                    </div>
+                </div>
+                <div id="countdownClock">
+                    <h1 id="counter">01:20:47</h1>
+                    <h3 id="customMessage">left until we can finally explore the forest</h3>
+                </div>
+                <div id="styleSettings">
+                    <div id="themeSwitch">
+                        <div id="customCheckbox">
+                            <input type="checkbox" id="themeSwitchCheckBox"/>
+                            <label id="checkBoxDot" for="themeSwitchCheckBox"></label>
+                        </div>
+                    </div>
+                    <div class="glass" id="colorPaletteSelector">
+                        <div class="colorCircle" id="colorCircle1"></div>
+                        <div class="colorCircle" id="colorCircle2"></div>
+                        <div class="colorCircle" id="colorCircle3"></div>
+                    </div>
+                    <button>Create</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

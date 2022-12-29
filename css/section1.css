@@ -1,0 +1,28 @@
+#homeSection {
+    position: absolute;
+    width: 99%;
+    margin: 0;
+}
+
+#homeSection h1 {
+    margin: 0;
+    margin-top: 10%;
+    font-size: 10vh;
+    /* Set the background color */
+    background: linear-gradient(to bottom, var(--white) 40%, var(--gray) 100%);
+    /* Mask the color to the text, and remove the rest  */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Make the text fill color value transparent so the masked background color comes through */
+    -webkit-text-fill-color: transparent;
+}
+
+#homeSection h3 {
+    margin: 0;
+    color: var(--gray);
+    font-weight: 200;
+}
+
+#homeSection button {
+    margin-top: 8%;
+}

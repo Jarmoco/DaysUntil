@@ -1,0 +1,47 @@
+@import url("fonts/fonts.css");
+@import url("colors.css");
+@import url("navbar.css");
+@import url("section1.css");
+@import url("section2.css");
+
+body {
+    font-family: "Gelion regular";
+    background-color: var(--darkest);
+    color: var(--white);
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.glass {
+    backdrop-filter: blur(25px) saturate(100%);
+    -webkit-backdrop-filter: blur(25px) saturate(100%);
+    background-color: rgba(17, 25, 40, 0.36);
+}
+
+#sectionsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    height: calc(100vh - 14vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-family: "Gelion regular";
+    font-weight: 700;
+    font-size: 2.2vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 6px;
+}
+
+.particles-js-canvas-el {
+    height: calc(100vh - 14vh);
+}
