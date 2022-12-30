@@ -88,6 +88,10 @@ window.addEventListener('load', () => {
         urlSelection.style.display = "block"
         urlSelection.scrollIntoView()
         let hostname = window.location.host
+        // Check if website is running on github
+        if (hostname == "armadio2902.github.io") {
+            hostname = "armadio2902.github.io/DaysUntil"
+        }
         urlOutput.textContent = "http://" + hostname + "/countdown.html" + "?" + encodedData
     }
 
