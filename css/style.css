@@ -3,6 +3,8 @@
 @import url("navbar.css");
 @import url("section1.css");
 @import url("section2.css");
+@import url("section3.css");
+@import url("countdown.css");
 
 html {
     scroll-behavior: smooth;
@@ -22,7 +24,7 @@ input::-webkit-datetime-edit-year-field:focus {
 }
 
 body {
-    font-family: "Gelion regular";
+    font-family: "Objectivity Regular";
     background-color: var(--darkest);
     color: var(--white);
     user-select: none;
@@ -49,7 +51,7 @@ body {
 }
 
 button {
-    font-family: "Gelion regular";
+    font-family: "Objectivity Regular";
     font-weight: 700;
     font-size: 1.2vw;
     border: none;
@@ -80,6 +82,14 @@ h4 {
     font-weight: 400;
 }
 
+footer h3 {
+    font-size: 2.2vh;
+}
+
+footer h4 {
+    font-size: 1.8vh;
+}
+
 #blocker {
     position: absolute;
     top: 80%;
@@ -92,4 +102,12 @@ h4 {
     border: 1px solid var(--color1darkest);
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

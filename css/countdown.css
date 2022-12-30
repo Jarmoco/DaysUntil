@@ -1,0 +1,114 @@
+#countdownBack {
+    margin-top: 2%;
+    position: relative;
+    width: 95%;
+    margin-left: calc((100vw - 95% - 1%) / 2);
+    height: 80vh;
+    border-radius: 15px;
+    background-color: #0e100f;
+    background-image:
+        radial-gradient(at 10% 20%, var(--color1) 0, transparent 30%),
+        radial-gradient(at 95% 90%, var(--color1dark) 0, transparent 20%),
+        radial-gradient(at 95% 10%, var(--color1darkest) 0, transparent 20%),
+        radial-gradient(at 10% 80%, var(--color1darkest) 0, transparent 40%);
+}
+
+#countdownSection {
+    padding-top: 1%;
+    border-radius: 15px;
+}
+
+#countdownInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+#countdownInfo h2 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+#countdownInfo div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#countdownInfo div label {
+    margin: 0;
+    margin-right: 0.2vw;
+    font-size: 1vw;
+}
+
+#countdownInfo div h3 {
+    color: var(--gray);
+    font-weight: 200;
+    margin: 0;
+    font-size: 1.1vw;
+}
+
+#countdownName,
+#countdownAuthor {
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    font-size: 1.5vw;
+    border-radius: 8px;
+}
+
+#countdownClock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#countdownClock h1 {
+    font-size: 10vw;
+    margin: 0;
+    margin-top: 18vh;
+}
+
+#countdownClock h3 {
+    margin-top: 0;
+    font-size: 1.3vw;
+    font-weight: 200;
+    color: var(--gray);
+}
+
+@media screen and (max-width: 480px) {
+    #countdownInfo {
+        margin-top: 2vh;
+    }
+
+    #countdownInfo h2 {
+        font-size: 3vw;
+    }
+
+    #countdownInfo div label {
+        font-size: 2vw;
+    }
+
+    #countdownInfo div h3 {
+        font-size: 2.5vw;
+    }
+
+    #countdownClock h1 {
+        font-size: 15vw;
+    }
+    
+    #countdownClock h3 {
+        margin-top: 50vh;
+        font-size: 3vw;
+        font-weight: 200;
+        color: var(--gray);
+    }
+
+    #countdownBack {
+        margin-left: calc((100vw - 95vw) / 2);
+        margin-top: calc((100vh - 95vh) / 2);;
+    }
+}

@@ -1,0 +1,59 @@
+#urlSectionBack {
+    display: none;
+    margin-top: 3%;
+    position: relative;
+    width: 95%;
+    height: 30vh;
+    margin-left: calc((100vw - 95% - 1%) / 2);
+    border-radius: 15px;
+    background-color: #0e100f;
+    background-image:
+        radial-gradient(at 10% 20%, var(--color1darkest) 0, transparent 30%),
+        radial-gradient(at 95% 90%, var(--color1darkest) 0, transparent 30%),
+        radial-gradient(at 95% 50%, var(--color1darkest) 0, transparent 30%),
+        radial-gradient(at 5% 50%, var(--color1darkest) 0, transparent 20%);
+}
+
+#urlSection {
+    height: 30vh;
+    border-radius: 15px;
+    padding-bottom: 2vh;
+}
+
+#copyUrlButton {
+    width: 13vw;
+}
+
+#urlBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#urlBox h3 {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    margin-top: 0;
+    color: var(--gray);
+    font-weight: 200;
+    height: 8vh;
+    border-radius: 10px;
+    text-align: left;
+    user-select: text;
+    -webkit-user-select: text;
+    width: 50%;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 480px) {
+    #urlBox h3 {
+        width: 80vw;
+    }
+
+    #copyUrlButton {
+        font-size: 4vw;
+        width: 50vw;
+        height: 4vh;
+    }
+}

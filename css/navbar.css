@@ -18,10 +18,29 @@ nav {
 
 nav h3 {
     font-weight: 600;
-    font-size: 3vh;
+    font-size: 1.3vw;
 }
 
 nav a {
     color: var(--gray);
     cursor:not-allowed;
+    font-size: 1.3vw;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        height: 4vw;
+    }
+
+    nav h3 {
+        font-weight: 600;
+        font-size: 3vw;
+    }
+    
+    nav a {
+        color: var(--gray);
+        cursor:not-allowed;
+        font-size: 3vw;
+    }
+
 }

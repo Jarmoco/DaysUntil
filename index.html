@@ -41,18 +41,22 @@
                 <div id="datesSelector">
                     <div class="glass" id="fromDate">
                         <label for="fromDateInput">From:</label>
-                        <input type="date" class="dateInput" id="fromDateInput">
+                        <h3 id="fromDateInput"></h3>
                     </div>
                     <div class="glass" id="toDate">
                         <label for="toDateInput">To:</label>
                         <input type="date" class="dateInput" id="toDateInput">
                     </div>
                 </div>
-                <div id="countdownClock">
-                    <h1 id="counter">01:20:47</h1>
-                    <h3 id="customMessage">left until we can finally explore the forest</h3>
+                <div id="countdownClockPreview">
+                    <h1 id="counter">00:00:00</h1>
+                    <div id="messageInputBox">
+                        <label for="messageInput">left until</label>
+                        <input type="text" id="messageInput" placeholder="type an event, date or something else">
+                    </div>
                 </div>
                 <div id="styleSettings">
+                    <!--
                     <div id="themeSwitch">
                         <div id="customCheckbox">
                             <input type="checkbox" id="themeSwitchCheckBox"/>
@@ -64,11 +68,21 @@
                         <div class="colorCircle" id="colorCircle2"></div>
                         <div class="colorCircle" id="colorCircle3"></div>
                     </div>
-                    <button>Create</button>
+                    -->
+
+                    <button id="createCountdownButton">Create</button>
                 </div>
             </div>
-            <div id="blocker" class="glass">
-                Coming soon
+        </div>
+
+        <div id="urlSectionBack">
+            <div class="section glass" id="urlSection">
+                <h1>There you go</h1>
+                <div id="urlBox">
+                    <h3 class="glass" id="urlOutput"></h3>
+                    <button id="copyUrlButton">Copy to clipboard</button>
+                    <h5>(doesn't work on mobile)</h5>
+                </div>
             </div>
         </div>
     </div>
