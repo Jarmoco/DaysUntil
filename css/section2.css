@@ -71,6 +71,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 1vh;
+}
+
+.dateInputLabel {
+    font-size: 1.3vw;
 }
 
 #countdownClockPreview {
@@ -282,6 +287,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         margin-left: 1vw;
     }
 
+    .dateInputLabel {
+        font-size: 4vw;
+    }
+
     #fromDateInput {
         font-size: 3vw;
     }
@@ -320,5 +329,119 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     #createSectionBack {
         margin-left: calc((100vw - 95vw) / 2);
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .dateInputLabel {
+        font-size: 2vw;
+    }
+    
+    .dateInput, #fromDateInput {
+        font-size: 2vw;
+    }
+
+    #datesSelector div {
+        width: 25vw;
+    }
+
+    #messageInputBox label {
+        font-size: 2.5vw;
+    }
+
+    #messageInputBox #messageInput {
+        font-size: 2.5vw;
+        width: 50vw;
+    }
+
+    #createCountdownButton {
+        width: 20vw;
+        height: 6vh;
+        line-height: 6vh;
+        font-size: 2.5vw;
+    }
+
+    #createSectionBack {
+        margin-top: 30vh;
+    }
+
+    .countdownTextInput {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dateInputLabel {
+        font-size: 1.5vw;
+    }
+    
+    .dateInput, #fromDateInput {
+        font-size: 1.5vw;
+    }
+
+    #datesSelector div {
+        width: 15vw;
+    }
+
+    #messageInputBox label {
+        font-size: 1.5vw;
+    }
+
+    #messageInputBox #messageInput {
+        font-size: 1.5vw;
+        width: 25vw;
+    }
+
+    #createCountdownButton {
+        width: 8vw;
+        height: 6vh;
+        line-height: 6vh;
+        font-size: 1.5vw;
+    }
+
+    #createSectionBack {
+        margin-top: 30vh;
+    }
+
+    .countdownTextInput {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .dateInputLabel {
+        font-size: 1.3vw;
+    }
+    
+    .dateInput, #fromDateInput {
+        font-size: 1.3vw;
+    }
+
+    #datesSelector div {
+        width: 15vw;
+    }
+
+    #messageInputBox label {
+        font-size: 1.3vw;
+    }
+
+    #messageInputBox #messageInput {
+        font-size: 1.3vw;
+        width: 25vw;
+    }
+
+    #createCountdownButton {
+        width: 8vw;
+        height: 6vh;
+        line-height: 6vh;
+        font-size: 1.2vw;
+    }
+
+    #createSectionBack {
+        margin-top: 30vh;
+    }
+
+    .countdownTextInput {
+        font-size: 2vw;
     }
 }

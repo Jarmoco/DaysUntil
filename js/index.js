@@ -11,12 +11,12 @@ let copyUrlButton = document.getElementById("copyUrlButton")
 let urlOutput = document.getElementById("urlOutput")
 
 const date = new Date();
+new ClipboardJS('#copyUrlButton');
 
 // Wait for page to load
 window.addEventListener('load', () => {
-
     // Check if everything is completed
-    setInterval(function() {
+    setInterval(function () {
         if (countdownNameInput.value != "" && toDateInput.value != "") {
             // Enable create button 
             createCountdownButton.disabled = false
@@ -44,14 +44,11 @@ window.addEventListener('load', () => {
         createCountdown()
     })
 
-    // copy to clipboard 
+    // copy to clipboard: button feedback only
     copyUrlButton.addEventListener("click", function () {
-        // Copy the text inside the text field
-        navigator.clipboard.writeText(urlOutput.textContent);
-
         copyUrlButton.innerText = "Copied!"
-        
-        setTimeout(function() {
+
+        setTimeout(function () {
             copyUrlButton.innerText = "Copy to clipboard"
         }, 1000)
     })

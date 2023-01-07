@@ -5,9 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create and share beautiful countdowns, no login required!">
+    <!-- PWA Things. I disabled PWA due to some problems with chrome extensions-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon-16x16.png">
+    <link rel="mask-icon" href="/src/safari-pinned-tab.svg" color="#121f27">
+    <link rel="shortcut icon" href="/src/favicon.ico">
+    <meta name="msapplication-TileColor" content="#121f27">
+    <meta name="msapplication-config" content="/src/browserconfig.xml">
+    <meta name="theme-color" content="#121f27">
     <title>Days Until</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +33,7 @@
         <div id="homeSectionBack">
             <div class="section" id="homeSection">
                 <h1>Keep the Hype.</h1>
-                <h3>Create and share beautiful countdowns, no login required!</h3>
+                <h2>Create and share beautiful countdowns, no login required!</h2>
                 <button id="scrollToCreateButton">Get Started</button>
             </div>
         </div>
@@ -40,11 +51,11 @@
                 </div>
                 <div id="datesSelector">
                     <div class="glass" id="fromDate">
-                        <label for="fromDateInput">From:</label>
+                        <label for="fromDateInput" class="dateInputLabel">From:</label>
                         <h3 id="fromDateInput"></h3>
                     </div>
                     <div class="glass" id="toDate">
-                        <label for="toDateInput">To:</label>
+                        <label for="toDateInput" class="dateInputLabel">To:</label>
                         <input type="date" class="dateInput" id="toDateInput">
                     </div>
                 </div>
@@ -80,8 +91,7 @@
                 <h1>There you go</h1>
                 <div id="urlBox">
                     <h3 class="glass" id="urlOutput"></h3>
-                    <button id="copyUrlButton">Copy to clipboard</button>
-                    <h5>(doesn't work on mobile)</h5>
+                    <button id="copyUrlButton" data-clipboard-target="#urlOutput">Copy to clipboard</button>
                 </div>
             </div>
         </div>

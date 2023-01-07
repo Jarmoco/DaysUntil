@@ -17,7 +17,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-#homeSection h3 {
+#homeSection h2 {
     margin: 0;
     margin-top: 2vh;
     color: var(--gray);
@@ -28,6 +28,7 @@
 #homeSection button {
     margin-top: 8%;
     width: 10vw;
+    font-size: 0.5vw;
 }
 
 @media screen and (max-width: 480px) {
@@ -36,7 +37,7 @@
         font-size: 8vw;
     }
 
-    #homeSection h3 {
+    #homeSection h2 {
         font-size: 3vw;
         width: 50%;
         text-align: center;
@@ -46,6 +47,65 @@
         font-size: 3vw;
         width: 25vw;
         height: 4vh;
-        margin-top: 40vh;
+        margin-top: 30vh;
     }
 }
+
+@media screen and (min-width: 481px) {
+    #homeSection h1 {
+        margin-top: 30vh;
+        font-size: 6vw;
+    }
+
+    #homeSection h2 {
+        font-size: 2vw;
+        width: 60%;
+        text-align: center;
+    }
+
+    #homeSection button {
+        font-size: 1.8vw;
+        width: 15vw;
+        height: 5vh;
+        margin-top: 30vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #homeSection h1 {
+        margin-top: 18%;
+        font-size: 6vw;
+    }
+
+    #homeSection h2 {
+        margin-top: 2vh;
+        font-size: 1.6vw;
+    }
+
+    #homeSection button {
+        margin-top: 10%;
+        width: 15vw;
+        height: 6vh;
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #homeSection h1 {
+        margin-top: 10%;
+        font-size: 5vw;
+    }
+
+    #homeSection h2 {
+        margin-top: 2vh;
+        font-size: 1.2vw;
+    }
+
+    #homeSection button {
+        margin-top: 8%;
+        width: 10vw;
+        height: 6vh;
+        font-size: 1.2vw;
+    }
+}
+

@@ -20,6 +20,10 @@
     padding-bottom: 2vh;
 }
 
+#urlSection h1 {
+    font-size: 3vw;
+}
+
 #copyUrlButton {
     width: 13vw;
 }
@@ -49,6 +53,11 @@
 @media screen and (max-width: 480px) {
     #urlBox h3 {
         width: 80vw;
+        font-size: 4vw;
+    }
+
+    #urlSection h1 {
+        font-size: 5vw;
     }
 
     #copyUrlButton {
@@ -56,4 +65,54 @@
         width: 50vw;
         height: 4vh;
     }
+}
+
+@media screen and (min-width: 481px) {
+    #urlBox h3 {
+        width: 60vw;
+        font-size: 3vw;
+    }
+    #urlSection h1 {
+        font-size: 4vw;
+    }
+
+    #copyUrlButton {
+        font-size: 3vw;
+        width: 30vw;
+        height: 4vh;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    #urlBox h3 {
+        width: 60vw;
+        font-size: 2vw;
+    }
+    #urlSection h1 {
+        font-size: 2.5vw;
+    }
+
+    #copyUrlButton {
+        font-size: 1.5vw;
+        width: 15vw;
+        height: 6vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #urlBox h3 {
+        width: 60vw;
+        font-size: 1.3vw;
+    }
+    #urlSection h1 {
+        font-size: 2vw;
+    }
+
+    #copyUrlButton {
+        font-size: 1.2vw;
+        width: 15vw;
+        height: 6vh;
+    }
+
 }

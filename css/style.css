@@ -111,3 +111,15 @@ footer h4 {
         align-items: center;
     }
 }
+
+@media screen and (min-width: 481px) {
+    .particles-js-canvas-el, .section {
+        height: calc(90vh - 14vh);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .particles-js-canvas-el, .section {
+        height: calc(100vh - 14vh);
+    }
+}
