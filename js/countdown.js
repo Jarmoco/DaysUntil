@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
                     hoursLeft = 24 - hours
                 }
                 let msLeft = Math.abs(finalDateFormatted - date);
-                let daysLeft = Math.ceil(msLeft / (1000 * 60 * 60 * 24)); 
+                let daysLeft = Math.ceil((msLeft / (1000 * 60 * 60 * 24)) - 1); 
                 // Update the countdown
                 updateCD(daysLeft, hoursLeft, minutesLeft)
             }, 1000)
