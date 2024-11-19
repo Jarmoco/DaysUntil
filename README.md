@@ -1,4 +1,4 @@
 # DaysUntil
 Create and share beautiful countdowns
 
-Website: https://armadio2902.github.io/DaysUntil/
+Website: [Click here](https://jarmoco.github.io/DaysUntil/)
